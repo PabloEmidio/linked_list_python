@@ -49,10 +49,6 @@ class LinkedList:
     def index(self, index):
         node = self.head
         to_increment = 0
-        if index>len(self):
-            raise IndexError('index out of range')
-        elif index<0:
-            raise IndexError('Index cannot be less than 0')
         while node:
             if node.data==index:
                 return to_increment
