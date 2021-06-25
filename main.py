@@ -54,6 +54,7 @@ class LinkedList:
                 return to_increment
             node = node.next
             to_increment+=1
+        raise ValueError(f'{index} is not in linked list')
 
     
     def to_list(self):
@@ -64,3 +65,4 @@ class LinkedList:
             node_data.append(node.data)
         return node_data
     
+ 
